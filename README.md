@@ -22,7 +22,7 @@ Navigate to the project directory and install the project dependencies using Yar
 
 ```bash
 yarn
-
+```
  
 
 
@@ -33,7 +33,7 @@ Run the code generation script to generate necessary files:
  
 ```bash
 yarn codegen
-
+```
  
 
 
@@ -45,6 +45,7 @@ Build the project to prepare it for deployment:
  
 ```bash
 yarn build
+```
 
 
 ### **Setup Env**
@@ -62,12 +63,13 @@ The local .env file should be present in the root directory. The envs will be sh
 ```bash
 TEAM_API_KEY
 TEAM_API_SECRET
+```
 
 Run the following code for creating a relayer in defender:
 
 ```bash
-
  yarn create-relayer
+```
 
  
 
@@ -77,6 +79,7 @@ Run the following code for creating a webhook url in your defender:
 
 ```bash
 yarn create-autotask
+```
 
  
 
@@ -90,6 +93,7 @@ Use the url in below env:
  
 ```bash
 VITE_WEBHOOK_URL
+```
 
 
 ### **Development Mode**
@@ -98,9 +102,9 @@ VITE_WEBHOOK_URL
 Start the project in development mode:
  
 ```bash
-
 yarn dev
- 
+ ```
+
 
 _This command will start a local development server, and you can view the project by opening your browser and navigating to http://localhost:5173 (or a different port if specified)._
 
@@ -131,6 +135,7 @@ If your project is not already a Git repository, you can initialize one:
  
 ```bash
 git init
+```
 
  
 
@@ -142,6 +147,7 @@ Run the following command to link your Vercel account and configure deployment s
  
 ```bash
 vercel login
+```
 
  
 
@@ -154,6 +160,7 @@ After configuring, deploy the Interaugh app to Vercel:
  
 ```bash
 vercel --prod
+```
 
  
 
@@ -179,6 +186,7 @@ vercel --prod
  
 ```bash
 vercel --prod
+```
 
  
 
