@@ -1,8 +1,3 @@
-Interaugh(Katamoi) Project Deployment and Setup guide
-
- 
-
-
 # **Project Setup Documentation**
 
  
@@ -14,27 +9,18 @@ Interaugh(Katamoi) Project Deployment and Setup guide
 
 Before you begin, ensure that you have the following installed on your machine:
 
- 
-
-
-        `o`   Node.js (version 18)
-
-
-        `o`   Yarn (version 1.20 or higher)
-
-
-        `o`  [ OpenZeppelin](https://defender.openzeppelin.com/) defender account
+ * Node.js (version 18)
+ * Yarn (version 1.20 or higher)
+ * [ OpenZeppelin](https://defender.openzeppelin.com/) defender account
 
  
 
 
 ### **Install Dependencies**
 
+Navigate to the project directory and install the project dependencies using Yarn:
 
-        ·  	Navigate to the project directory and install the project dependencies using Yarn:
-
- 
-
+```bash
 yarn
 
  
@@ -42,11 +28,10 @@ yarn
 
 ### **Code Generation**
 
-
-        ·  	Run the code generation script to generate necessary files:
+Run the code generation script to generate necessary files:
 
  
-
+```bash
 yarn codegen
 
  
@@ -55,16 +40,14 @@ yarn codegen
 ### **Build the Project**
 
 
-        ·  	Build the project to prepare it for deployment:
+Build the project to prepare it for deployment:
 
  
-
+```bash
 yarn build
 
 
 ### **Setup Env**
-
- 
 
 The local .env file should be present in the root directory. The envs will be shared privately to the client.
 
@@ -73,21 +56,16 @@ The local .env file should be present in the root directory. The envs will be sh
 
 ### **Creating Relayer**
 
-
-        ·  	Setup the env with the following variables from ‎[OpenZeppelin](https://defender.openzeppelin.com/) defender
+	Setup the env with the following variables from ‎[OpenZeppelin](https://defender.openzeppelin.com/) defender
 
  
-
+```bash
 TEAM_API_KEY
-
 TEAM_API_SECRET
 
- 
+Run the following code for creating a relayer in defender:
 
-
-        ·  	Run the following code for creating a relayer in defender:
-
- 
+```bash
 
  yarn create-relayer
 
@@ -95,12 +73,9 @@ TEAM_API_SECRET
 
 
 ### **Creating Autotask**
+Run the following code for creating a webhook url in your defender:
 
-
-        ·  	Run the following code for creating a webhook url in your defender:
-
- 
-
+```bash
 yarn create-autotask
 
  
@@ -108,31 +83,23 @@ yarn create-autotask
 
 ### **Setup webhook**
 
-
-        ·  	Copy the webhook url from the[ OpenZeppelin](https://defender.openzeppelin.com/) defender dashboard
-
- 
-
- 
+Copy the webhook url from the[ OpenZeppelin](https://defender.openzeppelin.com/) defender dashboard
 
 Use the url in below env:
 
  
-
+```bash
 VITE_WEBHOOK_URL
 
 
 ### **Development Mode**
 
 
-        ·  	Start the project in development mode:
-
+Start the project in development mode:
  
+```bash
 
 yarn dev
-
- 
-
  
 
 _This command will start a local development server, and you can view the project by opening your browser and navigating to http://localhost:5173 (or a different port if specified)._
@@ -162,7 +129,7 @@ Before you begin, make sure you have the following installed:
 If your project is not already a Git repository, you can initialize one:
 
  
-
+```bash
 git init
 
  
@@ -170,27 +137,22 @@ git init
 
 ### **Configure Vercel Deployment**
 
-
-        ·   	Run the following command to link your Vercel account and configure deployment settings:
+Run the following command to link your Vercel account and configure deployment settings:
 
  
-
+```bash
 vercel login
 
  
 
 Follow the prompts to log in and configure your project. Choose the default settings for a static site when prompted.
 
- 
-
-
 ### **Deploy to Vercel**
 
-
-        ·   	After configuring, deploy the Interaugh app to Vercel:
+After configuring, deploy the Interaugh app to Vercel:
 
  
-
+```bash
 vercel --prod
 
  
@@ -215,7 +177,7 @@ vercel --prod
         ·   	After making changes to your app, redeploy it by running:
 
  
-
+```bash
 vercel --prod
 
  
