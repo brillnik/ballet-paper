@@ -87,7 +87,7 @@ yarn create-autotask
 
 ### **Setup webhook**
 
-Copy the webhook url from the[ OpenZeppelin](https://defender.openzeppelin.com/) defender dashboard
+Copy the webhook url from the autotask dashboard present on [ OpenZeppelin](https://defender.openzeppelin.com/) defender dashboard
 
 Use the url in below env:
 
