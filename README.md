@@ -89,7 +89,7 @@ yarn create-autotask
 
 Copy the webhook url from the autotask dashboard present on [ OpenZeppelin](https://defender.openzeppelin.com/) defender dashboard
 
-Use the url in below env:
+Use the url in below environment variable:
 
  
 ```bash
