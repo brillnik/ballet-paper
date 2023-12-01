@@ -51,7 +51,7 @@ yarn build
 ### **Setup Env**
 
 
-The local .env file should be present in the root directory. The envs will be shared privately to the client.
+The local .env file should be present in the root directory.
 
  
 
