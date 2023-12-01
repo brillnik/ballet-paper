@@ -58,7 +58,7 @@ The local .env file should be present in the root directory. The envs will be sh
 
 ### **Creating Relayer**
 
-	Setup the env with the following variables from ‎[OpenZeppelin](https://defender.openzeppelin.com/) defender
+Setup the env with the following variables from ‎[OpenZeppelin](https://defender.openzeppelin.com/) defender
 
  
 ```bash
@@ -150,9 +150,7 @@ Run the following command to link your Vercel account and configure deployment s
 vercel login
 ```
 
- 
-
-Follow the prompts to log in and configure your project. Choose the default settings for a static site when prompted.
+ Follow the prompts to log in and configure your project. Choose the default settings for a static site when prompted.
 
 ### **Deploy to Vercel**
 
@@ -172,17 +170,14 @@ vercel --prod
 
 
 ### 
-        ·   	**Access the Deployed App - **Once the deployment is successful, Vercel will provide you with a unique URL where your app is hosted. Access it in your browser to view your deployed app.
+Access the Deployed App - **Once the deployment is successful, Vercel will provide you with a unique URL where your app is hosted. Access it in your browser to view your deployed app.
 
  
 
 
 ### **Redeploying**
 
-** **
-
-
-        ·   	After making changes to your app, redeploy it by running:
+After making changes to your app, redeploy it by running:
 
  
 ```bash
